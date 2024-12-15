@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url(01_camera.jpg);
+  background-size: cover;
+  font-family: "Popins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-one i {
+  font-size: 30px;
+  font-weight: 300px;
+  line-height: 60px;
+  cursor: pointer;
+  position: absolute;
+  left: 16px;
+  transition: all 0.3s linear;
+}
+
+.sidebar-menu {
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+  background: radial-gradient(#7f9343, #ffffff53);
+  box-shadow: 2px 2px 2px #575757;
+  left: -350px;
+  transition: all 0.5s linear;
+}
+
+.sidebar-menu .logo {
+  width: 100%;
+  line-height: 60px;
+  box-shadow: 2px 2px 2px #575757;
+  height: 60px;
+}
+
+.sidebar-menu .logo a {
+  position: absolute;
+  color: white;
+  left: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300px;
+}
+
+.sidebar-menu .btn-two i {
+  color: #0a0a0aa7;
+  font-size: 25px;
+  line-height: 60px;
+  position: absolute;
+  left: 270px;
+  top: 1px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.sidebar-menu .item-list {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+}
+
+.sidebar-menu .item-list li {
+  margin-top: 6px;
+  padding: 16px 20px;
+}
+
+.sidebar-menu .item-list i,
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sidebar-menu .item-list i {
+  padding-right: 8px;
+}
+
+.sidebar-menu .social-media {
+  color: white;
+  opacity: 0.5;
+  position: absolute;
+  left: 25%;
+  bottom: 20px;
+}
+
+.sidebar-menu .social-media i {
+  padding: 0px 4px;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.sidebar-menu .item-list li:hover {
+  box-shadow: 0px 0px 5px #092704;
+}
+
+.sidebar-menu .social-media i:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.btn-one i:hover {
+  font-size: 35px;
+}
+
+.btn-two i:hover {
+  font-size: 30px;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .sidebar-menu {
+  left: 0px;
+}
+
+#check:checked ~ .btn-one i {
+  opacity: 0;
+}
